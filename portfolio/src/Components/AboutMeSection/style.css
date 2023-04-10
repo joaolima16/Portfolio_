@@ -1,0 +1,22 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 24vw;
+    position: relative;
+    margin: 0 auto;
+    top: 30px;
+    gap: 50px;
+}
+.content-image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+p{
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 2em;
+}
