@@ -1,0 +1,33 @@
+.footer_container{
+    display: flex;
+    align-items: center;
+    background-color: #06000c;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    top: 100vh;
+    flex-direction: column;
+    gap: 40px;
+}
+p{
+    color: #fff;
+}
+h1{
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+.container_form{
+    width: 60%;
+    height: 50%;
+    background-color: aqua;
+}
+@media(max-width:550px){
+    .footer_container{
+        gap: 20px;
+    }
+    .container_form{
+        width: 80%;
+        height: 70%;
+    }
+}
