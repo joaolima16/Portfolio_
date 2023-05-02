@@ -11,7 +11,9 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
     body{
-        transition: 1s;
+       width:100vw;
+       height:100vh;
+       transition: 1s;
        text-align:center;
        background:${({theme}) => theme.background};
        color: ${({theme}) =>theme.text};

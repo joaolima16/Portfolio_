@@ -13,8 +13,6 @@ import { Routes, Route,Switch } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
 
 function App() {
-
-    
   const selector = useSelector((State) => State.ThemeReducer.value);
   return (
     <>
