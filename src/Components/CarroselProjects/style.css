@@ -1,7 +1,7 @@
 .CarroselWrapper{
-    width: 100vw;
+    max-width: 124rem;
+    padding: 4rem 1rem;
     margin: 0 auto;
-    height: 30vh;
 
 }
 .Titleprojects{
@@ -9,7 +9,9 @@
     padding: 15px;
     font-size: 40px;
 }
-
+.image_slider img{
+    width: 100px;
+}
 .img_carrosel{
     width: 70%;
     border-radius: 5px;
@@ -25,6 +27,24 @@
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
+}
+.swiper_container{
+    height: 52rem;
+    padding: 2rem 0;
+    position: relative;
+}
+.swiper_container img{
+    width: 37rem;
+    height: 42rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+.swiper-controller{
+position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 480px) {

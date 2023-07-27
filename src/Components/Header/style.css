@@ -59,7 +59,9 @@ body {
         gap: 15px;
         font-size: 13px;
     }
-    
+    .section-titles{
+        top: 400px;
+    }
 }
 a{
     text-decoration: none;

@@ -1,8 +1,12 @@
-import Slider from 'react-slick';
-import imgSgp from '../../assets/Departamento.png'
-import imageDashboard from '../../assets/dashboard.PNG'
-import './style.css';
-import { useState } from 'react';
+import imgSgp from "../../assets/Departamento.png";
+import imageDashboard from "../../assets/dashboard.PNG";
+import "./style.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Slider from "react-slick";
+
 export default function CarroselProjects() {
   const settings = {
     dots: true,
@@ -13,50 +17,41 @@ export default function CarroselProjects() {
     slidesToScroll: 1,
     initialSlide: 2
   };
-
   const Projects = [
     {
-      project: "Sistema de Gerenciamento De Patrimônios", images: imgSgp
-      , link: "https://github.com/joaolima16/SGP-Sistema-De-Gerenciamento-De-Patrimonios"
+      project: "Sistema de Gerenciamento De Patrimônios",
+      images: imgSgp,
+      link: "https://github.com/joaolima16/SGP-Sistema-De-Gerenciamento-De-Patrimonios",
     },
     {
-      project: "Dashboard de Criptomoedas", images: imageDashboard,
-      link: "https://github.com/joaolima16/Dashboard-CriptoCoins"
-    }
-
-  ]
-
-
+      project: "Sistema de Gerenciamento De Patrimônios",
+      images: imgSgp,
+      link: "https://github.com/joaolima16/SGP-Sistema-De-Gerenciamento-De-Patrimonios",
+    },
+    {
+      project: "Sistema de Gerenciamento De Patrimônios",
+      images: imgSgp,
+      link: "https://github.com/joaolima16/SGP-Sistema-De-Gerenciamento-De-Patrimonios",
+    },
+    {
+      project: "Dashboard de Criptomoedas",
+      images: imageDashboard,
+      link: "https://github.com/joaolima16/Dashboard-CriptoCoins",
+    },
+  ];
 
   return (
-
     <>
-
-      <h1 className='Titleprojects' id="projects"> Projetos</h1>
       <section className="CarroselWrapper">
-
-
+        <h1 className="Title">Projetos</h1>
         <Slider {...settings}>
-          {
-            Projects.map(({ project, images, link }) => {
-              return (
-                <div className='img_wrapper'>
-                  <a href={link} target='_blank'>
-                    <img className="img_carrosel" src={images}
-                  
-                    />
-                  </a>
-                 
-                  <p className='name-project'>{project}</p>
-                </div>
-              )
-            })
-          }
+          {Projects.map(({project,images})=>{
+            return(
+              <img className="image_slider" src={images} />
+            )
+          })}
         </Slider>
-
-
       </section>
-
     </>
-  )
+  );
 }

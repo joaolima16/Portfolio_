@@ -1,13 +1,10 @@
-main {
+.Wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     position: relative;
     margin: 0 auto;
-    top: 30px;
-    align-items: center;
-
-
+    top: 20px;
 }
 
 .content-image{
@@ -49,7 +46,11 @@ p{
     main{
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+        align-items: center;
+        gap: 40px;
+    }
+    .Content{
+        margin: 0 auto;
     }
 }
 .btnCv{

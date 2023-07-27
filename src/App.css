@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+html,body{
+  scroll-behavior: smooth;
+}
 .App {
   text-align: center;
 }

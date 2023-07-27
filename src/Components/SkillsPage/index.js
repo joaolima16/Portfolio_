@@ -5,7 +5,7 @@ import ts from '../../assets/ts.png'
 import java from "../../assets/java.png"
 import csharp from '../../assets/Csharp.png';
 import react from '../../assets/react.png'
-import { Fade } from 'react-reveal'
+import { Fade } from 'react-awesome-reveal'
 import { useState } from 'react';
 import mysql from '../../assets/mysql.png';
 import git from '../../assets/git.png'

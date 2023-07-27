@@ -3,6 +3,7 @@ import { HeaderParallax, LiInformations, SectionTitles, SubTitle, Title, UlInfor
 import { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
+
 import './style.css';
 import { Link } from "react-router-dom";
 export default function Header() {
