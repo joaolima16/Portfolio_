@@ -1,4 +1,4 @@
-.Wrapper{
+.wrapperAbout{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -7,7 +7,7 @@
     top: 20px;
 }
 
-.content-image{
+.content_Image{
     width: 50%;
     height: 100%;
     display: flex;
@@ -16,15 +16,18 @@
 
 
 }
-.content-image img{    
+.content_Image img{    
     width: 250px;
     height: 250px;
     border-radius: 50%;
     position: relative;
-
-    
 }
-p{
+.content{
+    width: 70%;
+    height: 100%;
+
+}
+.content .content_Text{
     margin: 20px;
     text-transform: capitalize;
     font-size: 1rem;
@@ -32,14 +35,10 @@ p{
     font-weight: 400;
     line-height: 180%;
 }
-.Content{
-    width: 70%;
-    height: 100%;
 
-}
 @media(max-width:707px) {
   
-    .content-image img{
+    .content_Image img{
         width:60%;
         height: 80%;
     }
@@ -49,7 +48,7 @@ p{
         align-items: center;
         gap: 40px;
     }
-    .Content{
+    .content{
         margin: 0 auto;
     }
 }

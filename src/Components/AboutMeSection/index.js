@@ -18,18 +18,18 @@ export default function AboutMe() {
         <>
 
             <h1 className='title' id="aboutMe">Sobre mim</h1>
-            <main className='Wrapper'>
+            <main className='wrapperAbout'>
                 <Fade left duration={2500} when={State}>
-                    <section className='Content' >
-                        <p className='Content-text'>Me chamo João, tenho 18 anos, estudo programação há 2 anos,
+                    <section className='content' >
+                        <p className='content_Text'>Me chamo João, tenho 18 anos, estudo programação há 2 anos,
                             tenho conhecimentos em HTML e CSS3, nas linguagens: JavaScript, Java, C# e Python, conhecimento em banco de dados relacional e não relacional e conhecimento básico em versionamento de código com Git e GitHub. Tenho conhecimentos em Front-end utilizando ReactJs mas meu foco é a área de Back-end
                             utilizando a biblioteca NodeJs para a criação de Web Apis e comunicação com banco de dados.
                         </p>
               
                         <button className='btnCv'>Download CV</button>
                     </section>
-                    <section className='content-image' >
-                        <img src={image} />
+                    <section className='content_Image' >
+                        <img src={image} alt="Imagem de perfil"/>
                     </section>
                 </Fade>
             </main>

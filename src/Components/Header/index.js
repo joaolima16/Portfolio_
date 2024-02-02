@@ -1,5 +1,4 @@
 import { Switch } from "@mui/material";
-import { HeaderParallax, LiInformations, SectionTitles, SubTitle, Title, UlInformations } from "./style";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
@@ -24,8 +23,6 @@ export default function Header() {
                     <li className='informations'>Contatos</li>
                     <Switch onClick={() => { SetState(!State) }} />
                 </ul>
-
-
 
                 <section className='section-titles'>
                     <h1 className='title-name'>João Vitor De Lima</h1>

@@ -35,7 +35,7 @@ export default function SkillPage() {
     })
     return (
         <Fade right duration={2000} when={State}>
-            <section class="wrapper">
+            <section class="wrapper_skills">
 
                 <h1 className='title' id="skills">Habilidades</h1>
 

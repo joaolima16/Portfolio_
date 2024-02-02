@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./style.css";
 import githubLogo from "../../assets/github.png";
-import instaLogo from '../../assets/insta.png'
-import linkedinLogo from '../../assets/linkedin.png'
+import instaLogo from '../../assets/insta.png';
+import linkedinLogo from '../../assets/linkedin.png';
+import "./style.css";
 export default function Footer() {
     const [sizeCharacters, SetSizecharacters] = useState([]);
     const CountCharacters = () => {

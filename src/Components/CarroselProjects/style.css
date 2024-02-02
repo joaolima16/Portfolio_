@@ -1,50 +1,45 @@
-.CarroselWrapper{
-    max-width: 124rem;
-    padding: 4rem 1rem;
+.carrosel_Wrapper{
+    max-width: 60rem;
+    padding: 4rem 2rem;
     margin: 0 auto;
 
 }
-.Titleprojects{
+.title_Projects{
     text-align: center;
-    padding: 15px;
+    padding: 25px;
     font-size: 40px;
 }
-.image_slider img{
-    width: 100px;
-}
-.img_carrosel{
-    width: 70%;
-    border-radius: 5px;
-    margin: 0 auto;
-    position: relative;
-}
+
 .name-project{
     text-align: center;
     font-size: 20px;
     padding: 10px;
 }
-.img_wrapper{
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
+
+.btnMore{
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
 }
-.swiper_container{
-    height: 52rem;
-    padding: 2rem 0;
+.image_Slider_LeaveHover{
+    transition: .5s;
+    opacity: 0.2;
+}
+.name_Project{
     position: relative;
+    bottom: 350px;
+    font-size: 40px;
+    color: #000000;
+    text-shadow: 5px solid #000;
+    transition: .5s ease-in-out;
 }
-.swiper_container img{
-    width: 37rem;
-    height: 42rem;
-    border-radius: 2rem;
-    object-fit: cover;
+.name_Project_LeaveHover{
+    opacity: 0;
 }
-.swiper-controller{
-position: relative;
-  bottom: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.teste{
+    opacity: 1;
+    transition: 1.2s ease-in-out;
 }
 
 @media only screen and (max-width: 480px) {
@@ -58,9 +53,3 @@ position: relative;
         font-size: 15px;
     }
   }
-.btnMore{
-    padding: 5px 10px;
-    margin: 5px;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
-}

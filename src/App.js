@@ -1,16 +1,13 @@
-import { useState } from 'react';
+import { useSelector } from 'react-redux';
+import { ThemeProvider } from 'styled-components';
 import './App.css';
 import AboutMe from './Components/AboutMeSection';
+import CarroselProjects from './Components/CarroselProjects';
+import Footer from './Components/Footer/Footer';
 import Header from './Components/Header';
 import SkillPage from './Components/SkillsPage';
 import GlobalStyle from './GlobalStyle/GlobalStyle';
-import { ThemeProvider } from 'styled-components';
-import { LightTheme, DarkTheme } from './GlobalStyle/Theme';
-import CarroselProjects from './Components/CarroselProjects';
-import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
-import { Routes, Route,Switch } from 'react-router-dom';
-import Footer from './Components/Footer/Footer';
+import { DarkTheme, LightTheme } from './GlobalStyle/Theme';
 
 function App() {
 
@@ -19,7 +16,7 @@ function App() {
   return (
     <>
 
-      <ThemeProvider theme={selector == false ? LightTheme : DarkTheme}>
+      <ThemeProvider theme={selector === false ? LightTheme : DarkTheme}>
           <GlobalStyle />
           <Header />
         <AboutMe />
