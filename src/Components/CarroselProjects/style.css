@@ -1,6 +1,5 @@
 .carrosel_Wrapper{
     max-width: 60rem;
-    padding: 4rem 2rem;
     margin: 0 auto;
 
 }
@@ -22,9 +21,16 @@
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
 }
-.image_Slider_LeaveHover{
+.image_Slider_onHover{
+    width: 100%;
     transition: .5s;
     opacity: 0.2;
+}
+.image_Slider_leaveHover{
+    max-width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: 2s ease-in-out;
 }
 .name_Project{
     position: relative;
@@ -35,21 +41,48 @@
     transition: .5s ease-in-out;
 }
 .name_Project_LeaveHover{
+    position: relative;
+    bottom: 350px;
+    font-size: 40px;
+    color: #000000;
+    text-shadow: 5px solid #000;
     opacity: 0;
+    transition: 2s ease-in-out;
 }
-.teste{
+.more_Informations .image_github_leaveHover{
+    max-width: 100%;
+    position: relative;
+    width: 6rem;
+    height: auto;
+    bottom: 340px;
+    left: 24rem;
+    opacity: 0;
+    transition: 2s ease-in-out;
+}
+.more_Informations .image_github_onHover{
+    max-width: 100%;
+    position: relative;
+    width: 6rem;
+    height: auto;
+    bottom: 340px;
+    left: 24rem;
     opacity: 1;
-    transition: 1.2s ease-in-out;
+    transition: .5s ease-in-out;
 }
-
+.more_Informations .image_github img{
+    max-width: 100%;
+}
+.link_Github{
+    font-size: 25px;
+}
 @media only screen and (max-width: 480px) {
-    .CarroselWrapper{
+    .carrosel_Wrapper{
         width: 90vw;
     }
     .img-carrosel {
       width: 100%;
     }
-    .name-project{
+    .name_Project{
         font-size: 15px;
     }
   }

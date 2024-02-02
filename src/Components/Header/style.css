@@ -63,7 +63,7 @@ body {
         top: 400px;
     }
 }
-a{
+.list-informations a {
     text-decoration: none;
     color: #fff;
 }
