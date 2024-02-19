@@ -20,7 +20,8 @@ export default function Header() {
                     <a href="#aboutMe"><li className='informations'><a href="#aboutMe" />Sobre mim</li> </a>
                     <a href="#skills"><li className='informations'>Habilidades </li> </a>
                     <a href="#projects"><li className='informations'>Projetos</li></a>
-                    <li className='informations'>Contatos</li>
+                    <a href="#contatos"><li className='informations'>Contatos</li></a>
+                    
                     <Switch onClick={() => { SetState(!State) }} />
                 </ul>
 

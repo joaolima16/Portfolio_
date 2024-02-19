@@ -1,33 +1,24 @@
 import { useState } from "react";
-import githubLogo from "../../assets/github.png";
-import instaLogo from '../../assets/insta.png';
-import linkedinLogo from '../../assets/linkedin.png';
+import github from "../../assets/github-logo.png";
+import insta from '../../assets/insta.png';
+import linkedin from '../../assets/linkedin.png';
+import whatsapp from '../../assets/whatsapp.png'; 
+import gmail from '../../assets/gmail.png'
 import "./style.css";
 export default function Footer() {
-    const [sizeCharacters, SetSizecharacters] = useState([]);
-    const CountCharacters = () => {
-
-    }
     return (
         <>
             <footer className="footer_container">
-
-                <section className="container_wrapper">
-                    <h1 className="title_footer">Deseja entrar em contato? envie um e-mail</h1>
-                    <form className="form_mail">
-                        <input type="email" className="input_form" placeholder="E-mail" />
-                        <input type="text" className="input_form" placeholder="Assunto" />
-                        <textarea className="input_form_area" maxLength={200} onChange={(e) => { SetSizecharacters(e.target.value) }} />
-                        {/* <p className="max_character">Máximo De Caracteres 0/200</p> */}
-                        <button className="btnSubmit">Enviar</button>
-                    </form>
-                    <div>
-                        <nav className="wrapper_links">
-                            <a href="https://github.com/joaolima16"> <img src={githubLogo} className="logo_socials" /></a>
-                            <a href=""><img src={instaLogo} className="logo_socials" /></a>
-                            <a href="https://www.linkedin.com/in/jo%C3%A3o-goncalves/"><img src={linkedinLogo} className="logo_socials" /> </a>
-                        </nav>
+                <section className="content_container" id="contatos">
+                    <span>Formas de contato</span>
+                    <div className="social_media">
+                            <a href="https://www.instagram.com/joaolimaz_/"  target="_blank"> <img src={insta} alt="Logo do Instagram" /> </a>
+                            <a href="https://www.linkedin.com/in/joão-goncalves/" target="_blank"> <img src={linkedin} alt="Logo do LinkedIn" /> </a>
+                            <a href="https://github.com/joaolima16" target="_blank"> <img src={github} alt="Logo do Github" /> </a>
+                            <a href="https://wa.me/55956593989"  target="_blank"> <img src={whatsapp} alt="Logo do Whatsapp" /></a>
+                            <a href="mailto:joaovitordlg23101@gmail.com?subject=Portfólio"  target="_blank"> <img src={gmail} alt="Logo do Gmail" /></a>
                     </div>
+                    <p className="copyright">&copy; 2024 João Vitor De Lima Gonçalves. Todos os direitos reservados.</p>
                 </section>
             </footer>
 
