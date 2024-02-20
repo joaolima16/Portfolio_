@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
 html,body{
   scroll-behavior: smooth;
-}
-.App {
-  text-align: center;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-family: 'Gugi',cursive;
 }

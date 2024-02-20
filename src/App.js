@@ -17,12 +17,12 @@ function App() {
     <>
 
       <ThemeProvider theme={selector === false ? LightTheme : DarkTheme}>
-          <GlobalStyle />
-          <Header />
-        <AboutMe />
-          <SkillPage />
-          <CarroselProjects />
-          <Footer />
+            <GlobalStyle />
+            <Header />
+            <AboutMe />
+            <SkillPage />
+            <CarroselProjects />
+            <Footer />
       </ThemeProvider>
    
     </>

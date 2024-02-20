@@ -14,7 +14,7 @@
 
 }
 .content_container span{
-    font-size: 30px;
+    font-size: 1.6rem;
     color: #fff;
 }
 .social_media{
@@ -29,4 +29,5 @@
 .copyright{
     color: #fff;
     font-family: 'Gugi',cursive;
+    font-size: 1rem;
 }

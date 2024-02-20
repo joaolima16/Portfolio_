@@ -1,13 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
-body {
-    padding: 0;
-    margin: 0;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    font-family: 'Gugi',cursive;
-}
-
-.Header-parallax{
+.header_parallax{
     background-image: url("../../assets/image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,19 +7,23 @@ body {
     overflow: hidden;
     background-attachment: fixed;
 }
-.Header-parallax.list-informations{
+.Header_parallax .list_informations{
     display: block;
 }
-.list-informations{
+.list_informations {
     display: flex;
     flex-direction: row;
-    color: #fff;
+   
     padding: 20px;
     justify-content: end;
     gap: 35px;
     align-items: flex-end;
     list-style: none;
     cursor: pointer;
+  
+}
+.list_informations .informations{
+    color: #fff;
     font-size: clamp(0.7em, 0.7em + 1vw, 1.2em);
 }
 .informations:hover{
@@ -36,7 +31,7 @@ body {
     transition: 1s;
     text-shadow: 5px solid #fff;
 }
-.section-titles h1,h2{
+.section_titles h1,h2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,10 +41,10 @@ body {
     top: 120px;
    
 }
-.section-titles h1{
+.section_titles h1{
     font-size: clamp(0.7em, 1em + 5vw, 4em);
 }
-.section-titles h2{
+.section_titles h2{
     padding: 5px;
     font-size: clamp(0.4em, 0.7em + 2vw, 2em);
 }
@@ -59,7 +54,7 @@ body {
         gap: 15px;
         font-size: 13px;
     }
-    .section-titles{
+    .section_titles{
         top: 400px;
     }
 }

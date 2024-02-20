@@ -1,24 +1,17 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
 .wrapper_skills{
     padding: 50px;
     position: relative;
     top: 100px;
     text-decoration: none;
 }
-.title{
+ .title{
     text-align: center;
     font-size: 30px;
     padding: 50px;
     position: relative;
     top: 30px;
 }
-.skills_box {
+ .skills_box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

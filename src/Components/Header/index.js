@@ -15,9 +15,9 @@ export default function Header() {
     return (
 
         <>
-            <header className="Header-parallax">
-                <ul className='list-informations'>
-                    <a href="#aboutMe"><li className='informations'><a href="#aboutMe" />Sobre mim</li> </a>
+            <header className="header_parallax">
+                <ul className='list_informations'>
+                    <a href="#aboutMe"><li className='informations'>Sobre mim</li></a>
                     <a href="#skills"><li className='informations'>Habilidades </li> </a>
                     <a href="#projects"><li className='informations'>Projetos</li></a>
                     <a href="#contatos"><li className='informations'>Contatos</li></a>
@@ -25,8 +25,8 @@ export default function Header() {
                     <Switch onClick={() => { SetState(!State) }} />
                 </ul>
 
-                <section className='section-titles'>
-                    <h1 className='title-name'>João Vitor De Lima</h1>
+                <section className='section_titles'>
+                    <h1 className='name'>João Vitor De Lima</h1>
                     <h2 className='subtitle'>Desenvolvedor Web Back-End</h2>
 
                 </section>

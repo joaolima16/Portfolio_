@@ -21,6 +21,7 @@
     height: 250px;
     border-radius: 50%;
     position: relative;
+    right: 40px;
 
 }
 .content{
@@ -57,6 +58,7 @@
     .content_Image img{
         width:60%;
         height: 80%;
+        right: 0px;
     }
     main{
         flex-wrap: wrap;
@@ -66,5 +68,11 @@
     }
     .content{
         margin: 0 auto;
+    }
+
+}
+@media(max-width: 480px){
+    .content_Text{
+        font-size: 20px;
     }
 }

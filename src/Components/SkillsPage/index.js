@@ -12,11 +12,11 @@ import git from '../../assets/git.png'
 import python from '../../assets/python.png';
 
 const objLanguages = [
-    { name: "JavaScript", img: Js },
-    { name: "NodeJs", img: Node },
-    { name: "TypeScript", img: ts },
-    { name: "Java", img: java },
-    { name: "Csharp", img: csharp },
+    { name: "JavaScript", img: Js, link: "https://github.com/joaolima16/SGP-Sistema-De-Gerenciamento-De-Patrimonios" },
+    { name: "NodeJs", img: Node, link: "https://github.com/joaolima16/PROJETO_portfolio"},
+    { name: "TypeScript", img: ts, link: "https://github.com/joaolima16/backend_kmg" },
+    { name: "Java", img: java, link: "https://github.com/joaolima16/SENAC_PI" },
+    { name: "Csharp", img: csharp, link: "https://github.com/joaolima16/Projeto-WindowsForms" },
     { name: "ReactJs", img: react },
     { name: "MySql", img: mysql },
     { name: "Git/Github", img: git },
@@ -42,15 +42,14 @@ export default function SkillPage() {
                 <main class="skills_box">
 
                     {
-                        objLanguages.map(({ name, img }) => {
+                        objLanguages.map(({ name, img, link }) => {
                             return (
-
                                 <div class="box_item" >
-                                    <a href="#" class="ag-courses-item_link">
+                                    <a href={link}  rel="noreferrer" target='_blank' class="ag-courses-item_link">
                                         <div class="ag-courses-item_bg" ></div>
 
                                         <div class="ag-courses-item_title">
-                                            <img className="img-box" src={img} />
+                                            <img className="img-box" src={img} alt={`Linguagem: ${name}`}/>
                                         </div>
 
                                         <span className='box_text'>{name}</span>

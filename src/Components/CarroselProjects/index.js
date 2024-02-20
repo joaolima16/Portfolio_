@@ -49,12 +49,12 @@ export default function CarroselProjects() {
           {Projects.map(({project,images, link})=>{
             return(
               <figure className="fig_slider" onMouseEnter={() => setHover(true)} onMouseLeave={()=>{setHover(false)}} >
-                       <a href={link} target="_blank" className="link_Github">
+                       <a href={link}  rel="noreferrer" target="_blank" className="link_Github">
                           <img  className={hover===true? "image_Slider_onHover": "image_Slider_leaveHover"} src={images} alt="Carrosel de projetos"/>
                       </a>
                       <div className="more_Informations">
                           <span className={hover ==true? "name_Project": "name_Project_LeaveHover"}>{project}</span>
-                          <a href={link} target="_blank" className="link_Github">
+                          <a href={link} rel="noreferrer" target="_blank" className="link_Github">
                               <img  className={hover===true? "image_github_onHover": "image_github_leaveHover"} src={githubImage}  alt="Imagem do github"/>
                           </a>
                       </div>
