@@ -51,9 +51,7 @@ export default function SkillPage() {
                                         <div class="ag-courses-item_title">
                                             <img className="img-box" src={img} alt={`Linguagem: ${name}`}/>
                                         </div>
-
                                         <span className='box_text'>{name}</span>
-
                                     </a>
 
                                 </div>

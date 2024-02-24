@@ -21,12 +21,12 @@ export default function AboutMe() {
             <main className='wrapperAbout'>
                 <Fade left duration={2500} when={State}>
                     <section className='content' >
-                        <p className='content_Text'>Me chamo João, tenho 18 anos, estudo programação há 2 anos,
-                            tenho conhecimentos em HTML e CSS3, nas linguagens: JavaScript, Java, C# e Python, conhecimento em banco de dados relacional e não relacional e conhecimento básico em versionamento de código com Git e GitHub. Tenho conhecimentos em Front-end utilizando ReactJs mas meu foco é a área de Back-end
-                            utilizando a biblioteca NodeJs para a criação de Web Apis e comunicação com banco de dados.
+                        <p className='content_Text'>
+                            Me chamo João, tenho 19 anos e estudo programação há 3 anos. Possuo conhecimentos sólidos em JavaScript, Node.Js e React.Js. 
+                            Atualmente, estou explorando Spring Boot e aprimorando minhas habilidades em bancos de dados relacional e não relacional. Tenho familiaridade com Git e GitHub para versionamento de código. Meu foco principal está no Back-end, utilizando NodeJs para desenvolver Web APIs e integrar com bancos de dados. Estou sempre em busca de desafios e oportunidades para aprimorar minhas habilidades e contribuir em projetos inovadores.
                         </p>
               
-                        <button className='btnCv'>Download CV</button>
+                        <a href="https://drive.google.com/uc?export=download&id=1LHAbmhojmjHuuxuLxELH_nNAoGvZfwuP" target='_blank'> <button className='btnCv'>Download CV</button></a>
                     </section>
                     <section className='content_Image' >
                         <img src={image} alt="Imagem de perfil"/>

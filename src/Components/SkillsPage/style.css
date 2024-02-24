@@ -39,6 +39,7 @@
     background-color: #141414;
     overflow: hidden;
     position: relative;
+    text-decoration: none;
   }
   .ag-courses-item_link:hover,
   .ag-courses-item_link:hover .ag-courses-item_date {

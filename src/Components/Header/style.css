@@ -48,17 +48,18 @@
     padding: 5px;
     font-size: clamp(0.4em, 0.7em + 2vw, 2em);
 }
+.list_informations a {
+    text-decoration: none;
+    color: #fff;
+}
 @media(max-width:653px) {
-    .list-informations {
+    .list_informations {
         justify-content: center;
         gap: 15px;
-        font-size: 13px;
+        font-size: 11px;
     }
     .section_titles{
         top: 400px;
     }
 }
-.list-informations a {
-    text-decoration: none;
-    color: #fff;
-}
+

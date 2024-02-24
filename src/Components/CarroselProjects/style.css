@@ -24,7 +24,7 @@
 .image_Slider_onHover{
     width: 100%;
     transition: .5s;
-    opacity: 0.2;
+    opacity: 0.5;
 }
 .image_Slider_leaveHover{
     max-width: 100%;
