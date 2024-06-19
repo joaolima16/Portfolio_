@@ -3,7 +3,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import imgSgp from "../../assets/Departamento.png";
 import githubImage from "../../assets/github.png";
+import kmgImg from '../../assets/kmg.PNG'
 import imageDashboard from "../../assets/dashboard.PNG";
+import imgPi from '../../assets/e-commerce.PNG'
 import "./style.css";
 import { useState } from "react";
 
@@ -25,14 +27,14 @@ export default function CarroselProjects() {
       link: "https://github.com/joaolima16/SGP-Sistema-De-Gerenciamento-De-Patrimonios",
     },
     {
-      project: "Sistema de Gerenciamento De Patrimônios",
-      images: imgSgp,
-      link: "https://github.com/joaolima16/SGP-Sistema-De-Gerenciamento-De-Patrimonios",
+      project: "KMG Construtora",
+      images: kmgImg,
+      link: "https://kmg.eng.br",
     },
     {
-      project: "Sistema de Gerenciamento De Patrimônios",
-      images: imgSgp,
-      link: "https://github.com/joaolima16/SGP-Sistema-De-Gerenciamento-De-Patrimonios",
+      project: "Projeto Integrador - JKR Ecommerce",
+      images: imgPi,
+      link: "https://github.com/joaolima16/Projeto_PI_Novo",
     },
     {
       project: "Dashboard de Criptomoedas",
@@ -53,9 +55,9 @@ export default function CarroselProjects() {
                           <img  className={hover===true? "image_Slider_onHover": "image_Slider_leaveHover"} src={images} alt="Carrosel de projetos"/>
                       </a>
                       <div className="more_Informations">
-                          <span className={hover ==true? "name_Project": "name_Project_LeaveHover"}>{project}</span>
+                          {/* <span className={hover ==true? "name_Project": "name_Project_LeaveHover"}>{project}</span> */}
                           <a href={link} rel="noreferrer" target="_blank" className="link_Github">
-                              <img  className={hover===true? "image_github_onHover": "image_github_leaveHover"} src={githubImage}  alt="Imagem do github"/>
+                              {/* <img  className={hover===true? "image_github_onHover": "image_github_leaveHover"} src={githubImage}  alt="Imagem do github"/> */}
                           </a>
                       </div>
                       
